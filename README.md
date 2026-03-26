@@ -8,4 +8,4 @@ Set of extra tools for confluence migration. This is experimental and not offici
 * Minimal XWiki version supported: XWiki 17.10
 * Translations: N/A
 * Sonar Dashboard: N/A
-* Continuous Integration Status: [![Build Status](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-extra-tools/job/main/badge/icon)](http://ci.xwikisas.com/view/All/job/confluence-extra-tools/job/jira-pro/job/main/)
+* Continuous Integration Status: [![Build Status](http://ci.xwikisas.com/view/All/job/xwikisas/job/confluence-extra-tools/job/main/badge/icon)](http://ci.xwikisas.com/view/All/job/confluence-extra-tools/job/confluence-extra-tools/job/main/)
