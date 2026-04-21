@@ -52,6 +52,7 @@
   <modules>
     <module>macros-atc</module>
     <module>macros-confluence</module>
+    <module>macros-templates</module>
     <module>macros-tfcs</module>
   </modules>
 </project>

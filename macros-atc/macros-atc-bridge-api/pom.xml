@@ -28,7 +28,7 @@
   </parent>
   <artifactId>macros-atc-bridge-api</artifactId>
   <packaging>jar</packaging>
-  <name>Macros - ATC - Bridge API</name>
+  <name>Confluence extra tools - Macros - ATC - Bridge API</name>
   <description>Bridges for the Advanced Tables for Confluence</description>
   <dependencies>
     <dependency>

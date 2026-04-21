@@ -28,7 +28,7 @@
   </parent>
   <artifactId>macros-confluence-wikimarkup</artifactId>
   <packaging>jar</packaging>
-  <name>Macros - Confluence - Wiki markup</name>
+  <name>Confluence extra tools - Macros - Confluence - Wiki markup</name>
   <description>The Confluence wiki markup bridge macro</description>
   <dependencies>
     <dependency>

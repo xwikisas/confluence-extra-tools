@@ -28,7 +28,7 @@
   </parent>
   <artifactId>macros-atc</artifactId>
   <packaging>pom</packaging>
-  <name>Macros - ATC</name>
+  <name>Confluence extra tools - Macros - ATC</name>
   <description>Main module dedicated for handling the Advanced Tables for Confluence macros from Appfire</description>
   <modules>
     <module>macros-atc-bridge-api</module>

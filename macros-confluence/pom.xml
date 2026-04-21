@@ -28,7 +28,7 @@
   </parent>
   <artifactId>macros-confluence</artifactId>
   <packaging>pom</packaging>
-  <name>Macros - Confluence</name>
+  <name>Confluence extra tools - Macros - Confluence</name>
   <description>Macro for the Standard Confluence</description>
   <modules>
     <module>confluence-macros-wikimarkup</module>

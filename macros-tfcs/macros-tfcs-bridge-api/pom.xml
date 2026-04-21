@@ -28,7 +28,7 @@
   </parent>
   <artifactId>macros-tfcs-bridge-api</artifactId>
   <packaging>jar</packaging>
-  <name>Macros - TFCS - Bridge API</name>
+  <name>Confluence extra tools - Macros - TFCS - Bridge API</name>
   <description>Bridges for Table Filter, Charts and Spreadsheets macros</description>
   <dependencies>
     <dependency>
