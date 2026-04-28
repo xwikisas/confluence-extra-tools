@@ -1,0 +1,125 @@
+.#------------------------------------------------------------------------------
+.expect|filter+xml
+.# Content conversions
+.#------------------------------------------------------------------------------
+<wikiSpace name="MySpace">
+  <wikiDocument name="WebHome">
+    <wikiDocumentLocale>
+      <p>
+        <parameters>
+          <entry>
+            <string>creation_author</string>
+            <string>XWiki.47826731</string>
+          </entry>
+          <entry>
+            <string>creation_date</string>
+            <date>2012-08-21 15:37:47.0 UTC</date>
+          </entry>
+          <entry>
+            <string>lastrevision</string>
+            <string>1</string>
+          </entry>
+        </parameters>
+      </p>
+      <wikiDocumentRevision revision="1">
+        <p>
+          <parameters>
+            <entry>
+              <string>revision_author</string>
+              <string>XWiki.47826731</string>
+            </entry>
+            <entry>
+              <string>revision_date</string>
+              <date>2016-10-11 14:47:37.0 UTC</date>
+            </entry>
+            <entry>
+              <string>revision_comment</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>title</string>
+              <string>My Space</string>
+            </entry>
+            <entry>
+              <string>content</string>
+              <string>(% summary="Some summary" style="width: 50%" id="someId" dir="ltr" lang="ro" title="Some title" class="someClass" %)
+
+
+(% charoff="3" char="*" style="color: green" id="someId" dir="rtl" lang="ro" title="Some title" class="someClass" %)
+|=(((
+Hello
+)))|=(((
+There
+)))|=(((
+Personsan
+)))
+|(((
+Hi
+)))|(% colspan="2" rowspan="2" style="background-color: red" id="cellId" dir="ltr" title="Some other title" class="cellclass" height="2em" %)(((
+here
+)))|(((
+mister individual
+)))
+
+\\
+
+\\
+
+\\
+
+\\
+
+**Table with text where it shouldnt be**
+
+(% summary="Some summary" style="width: 50%" id="someId" dir="ltr" lang="ro" title="Some title" class="someClass" %)
+
+
+Nothing here
+
+|(((
+Hi
+)))|(((
+mister individual
+)))
+
+SOme text here
+
+SOme other text here
+
+**Table witout thead/tbody**
+
+
+
+|=(((
+Hi
+)))|=(((
+mister individual
+)))
+|(((
+Maybe
+)))|(((
+Row?
+)))</string>
+            </entry>
+            <entry>
+              <string>syntax</string>
+              <org.xwiki.rendering.syntax.Syntax>
+                <type>
+                  <name>XWiki</name>
+                  <id>xwiki</id>
+                  <variants class="empty-list"/>
+                </type>
+                <version>2.1</version>
+              </org.xwiki.rendering.syntax.Syntax>
+            </entry>
+          </parameters>
+        </p>
+      </wikiDocumentRevision>
+    </wikiDocumentLocale>
+  </wikiDocument>
+</wikiSpace>
+.#------------------------------------------------------------------------------
+.input|confluence+xml
+.configuration.source=tableMacros
+.configuration.storeConfluenceDetailsEnabled=false
+.#------------------------------------------------------------------------------

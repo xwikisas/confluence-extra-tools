@@ -1,0 +1,4 @@
+com.xwiki.confluenceextra.converters.internal.LozengeMacroConverter
+com.xwiki.confluenceextra.converters.internal.MacrosToGroupConverter
+com.xwiki.confluenceextra.converters.internal.MacrosToSpanConverter
+com.xwiki.confluenceextra.converters.internal.TableMacrosConverter

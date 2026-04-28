@@ -1,0 +1,208 @@
+.#------------------------------------------------------------------------------
+.expect|filter+xml
+.# Content conversions
+.#------------------------------------------------------------------------------
+<wikiSpace name="MySpace">
+  <wikiDocument name="WebHome">
+    <wikiDocumentLocale>
+      <p>
+        <parameters>
+          <entry>
+            <string>creation_author</string>
+            <string>XWiki.Teo</string>
+          </entry>
+          <entry>
+            <string>creation_date</string>
+            <date>2012-08-21 15:37:47.0 UTC</date>
+          </entry>
+          <entry>
+            <string>lastrevision</string>
+            <string>1</string>
+          </entry>
+        </parameters>
+      </p>
+      <wikiDocumentRevision revision="1">
+        <p>
+          <parameters>
+            <entry>
+              <string>revision_author</string>
+              <string>XWiki.Teo</string>
+            </entry>
+            <entry>
+              <string>revision_date</string>
+              <date>2016-10-11 14:47:37.0 UTC</date>
+            </entry>
+            <entry>
+              <string>revision_comment</string>
+              <string></string>
+            </entry>
+            <entry>
+              <string>title</string>
+              <string>My Space</string>
+            </entry>
+            <entry>
+              <string>content</string>
+              <string>== {{id name="MySpaceHome-Span"/}}Span ==
+
+The followint span is inline:
+
+(% class="confluenceInline confluence_span_content" %)
+(((
+inline span
+)))
+
+~!!!!!!!!
+
+\\
+
+The following span is not inline:
+
+(% class="confluence_span_content" %)
+(((
+not inline span
+)))
+
+~!!!!!!!!!!!!
+
+(% style="color: purple" id="someId" dir="rtl" lang="ro" title="U are hovering this" class="confluenceInline confluence_span_content someClass" %)
+(((
+This is some content
+
+**Strong **//italic//
+
+{{info title="Proof"}}
+That this supports rich content
+{{/info}}
+
+\\
+)))
+
+This is an
+
+(% style="text-decoration: underline" id="someCoolId" dir="rtl" title="Some text" class="confluenceInline confluence_span_content someCoolClass" %)
+(((
+inline span
+)))
+
+Mkay???
+
+== {{id name="MySpaceHome-BGColor"/}}BGColor ==
+
+(% style="background-color: yellow;" class="confluenceInline confluence_bgcolor_content someClass" %)
+(((
+SOme content that will have a specific bg color
+
+**Strong **//italic//
+
+{{info title="Proof"}}
+That this supports rich content
+{{/info}}
+
+\\
+)))
+
+This is inline
+
+(% style="background-color: purple;" class="confluenceInline confluence_bgcolor_content someClass" %)
+(((
+bg color
+)))
+
+Wohoo. So happy
+
+== {{id name="MySpaceHome-Highlight"/}}Highlight ==
+
+(% style="background-color: blue;" class="confluenceInline confluence_highlight_content someClass" %)
+(((
+This will be highlighted! THis is also rich text
+
+\\
+
+**Strong **//italic//
+
+{{info title="Proof"}}
+That this supports rich content
+{{/info}}
+
+\\
+)))
+
+This is inline
+
+(% class="confluenceInline confluence_highlight_content" style="background-color: green;" %)
+(((
+highlight
+)))
+
+Highlightimus maximus
+
+== {{id name="MySpaceHome-tm"/}}tm ==
+
+(% class="confluenceInline confluence_tm_content someClass" %)
+(((
+Some rich content
+
+**Strong **//italic//
+
+{{info title="Proof"}}
+That this supports rich content
+{{/info}}
+
+\\
+)))^^TM^^
+
+\\
+
+This is an example for an inline
+
+(% class="confluenceInline confluence_tm_content" %)
+(((
+tmmacro
+)))^^TM^^
+
+tm tm tm.
+
+== {{id name="MySpaceHome-reg-tm"/}}reg-tm ==
+
+(% class="confluenceInline confluence_reg-tm_content someClass" %)
+(((
+Some rich content
+
+**Strong **//italic//
+
+{{info title="Proof"}}
+That this supports rich content
+{{/info}}
+
+\\
+)))^^®^^
+
+This is an example for an inline
+
+(% class="confluenceInline confluence_reg-tm_content" %)
+(((
+registered trademark
+)))^^®^^</string>
+            </entry>
+            <entry>
+              <string>syntax</string>
+              <org.xwiki.rendering.syntax.Syntax>
+                <type>
+                  <name>XWiki</name>
+                  <id>xwiki</id>
+                  <variants class="empty-list"/>
+                </type>
+                <version>2.1</version>
+              </org.xwiki.rendering.syntax.Syntax>
+            </entry>
+          </parameters>
+        </p>
+      </wikiDocumentRevision>
+    </wikiDocumentLocale>
+  </wikiDocument>
+</wikiSpace>
+.#------------------------------------------------------------------------------
+.input|confluence+xml
+.configuration.source=macrosToSpan
+.configuration.storeConfluenceDetailsEnabled=false
+.#------------------------------------------------------------------------------

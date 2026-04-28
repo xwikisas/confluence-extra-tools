@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-generic datetime="2023-10-02 11:40:11">
+  <object class="ConfluenceUserImpl" package="com.atlassian.confluence.user">
+    <id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    <property name="name"><![CDATA[Teo]]></property>
+    <property name="lowerName"><![CDATA[Smecherus]]></property>
+    <property name="email"><![CDATA[teo@email.com]]></property>
+  </object>
+  <object class="Page" package="com.atlassian.confluence.spaces">
+    <id name="id">45809845</id>
+    <property name="hibernateVersion">5</property>
+    <property name="title">My Space Home</property>
+    <property name="lowerTitle">my space home</property>
+    <collection name="bodyContents" class="java.util.Collection"><element class="BodyContent" package="com.atlassian.confluence.core"><id name="id">156868656</id>
+    </element>
+    </collection>
+    <property name="version">1</property>
+    <property name="creator" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="creationDate">2012-08-21 15:37:47.000</property>
+    <property name="lastModifier" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="lastModificationDate">2016-10-11 14:47:37.000</property>
+    <property name="versionComment"><![CDATA[]]></property>
+    <property name="contentStatus"><![CDATA[current]]></property>
+    <collection name="labellings" class="java.util.Collection"></collection>
+    <property name="space" class="Space" package="com.atlassian.confluence.spaces"><id name="id">46268417</id>
+    </property>
+    <collection name="attachments" class="java.util.Collection(com.atlassian.confluence.core.ContentEntityObject.attachments)"></collection>
+  </object>
+  <object class="Space" package="com.atlassian.confluence.spaces">
+    <id name="id">46268417</id>
+    <property name="name"><![CDATA[My Space]]></property>
+    <property name="key"><![CDATA[MySpace]]></property>
+    <property name="lowerKey"><![CDATA[myspace]]></property>
+    <property name="homePage" class="Page" package="com.atlassian.confluence.pages"><id name="id">45809845</id></property>
+    <collection name="permissions" class="java.util.Collection"></collection>
+    <property name="creator" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="creationDate">2012-08-21 15:37:47.000</property>
+    <property name="lastModifier" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="lastModificationDate">2016-10-11 14:47:37.000</property>
+    <property name="spaceType">global</property>
+    <property name="spaceStatus" enum-class="SpaceStatus" package="com.atlassian.confluence.spaces">CURRENT</property>
+  </object>
+  <object class="BodyContent" package="com.atlassian.confluence.core">
+    <id name="id">156868656</id>
+    <property name="body"><![CDATA[<h2>Span</h2>
+<p>The followint span is inline: </p><ac:structured-macro ac:name="span" ac:schema-version="1" ac:macro-id="311c6477-80b6-4139-8107-54a72043cc1a"><ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter><ac:rich-text-body>inline span</ac:rich-text-body></ac:structured-macro>
+<p>!!!!!!!!</p>
+<p><br /></p>
+<p>The following span is not inline:</p><ac:structured-macro ac:name="span" ac:schema-version="1" ac:macro-id="38d47c3b-6479-4f20-a8e4-b92ee84dc23a"><ac:parameter ac:name="atlassian-macro-output-type">BLOCK</ac:parameter><ac:rich-text-body>
+<p>not inline span</p></ac:rich-text-body></ac:structured-macro>
+<p>!!!!!!!!!!!!</p>
+<ac:structured-macro ac:name="span" ac:schema-version="1"
+    ac:macro-id="1814e93c-0c47-4fd8-894a-47e53c84e48b">
+    <ac:parameter ac:name="style">color: purple</ac:parameter>
+    <ac:parameter ac:name="id">someId</ac:parameter>
+    <ac:parameter ac:name="dir">rtl</ac:parameter>
+    <ac:parameter ac:name="lang">ro</ac:parameter>
+    <ac:parameter ac:name="title">U are hovering this</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>This is some content</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="8bce81c7-e524-4983-8676-8272564e08a9">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>This is an </p>
+<ac:structured-macro ac:name="span" ac:schema-version="1"
+    ac:macro-id="0c128a78-3881-442b-8eca-5c11b5f98df1">
+    <ac:parameter ac:name="style">text-decoration: underline</ac:parameter>
+    <ac:parameter ac:name="id">someCoolId</ac:parameter>
+    <ac:parameter ac:name="dir">rtl</ac:parameter>
+    <ac:parameter ac:name="title">Some text</ac:parameter>
+    <ac:parameter ac:name="class">someCoolClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>inline span</p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>Mkay???</p>
+<h2>BGColor</h2>
+<ac:structured-macro ac:name="bgcolor" ac:schema-version="1"
+    ac:macro-id="d449a715-a2f5-404a-a001-e88b4d56fa62">
+    <ac:parameter ac:name="color">yellow</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>SOme content that will have a specific bg color</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="17515c38-c0a2-4262-a78d-e2b45f9e30ce">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>This is inline</p>
+<ac:structured-macro ac:name="bgcolor" ac:schema-version="1"
+    ac:macro-id="d355ecd2-d664-46f6-8e8f-a9478837bd80">
+    <ac:parameter ac:name="color">purple</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>bg color</ac:rich-text-body>
+</ac:structured-macro>
+<p> Wohoo. So happy</p>
+<h2>Highlight</h2>
+<ac:structured-macro ac:name="highlight" ac:schema-version="1"
+    ac:macro-id="2a4e2866-0c35-4b64-a773-e7881b65cc2f">
+    <ac:parameter ac:name="color">blue</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>This will be highlighted! THis is also rich text</p>
+        <p>
+            <br />
+        </p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="914e2e31-06a7-40af-9311-e656b1d92b38">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>This is inline</p>
+<ac:structured-macro ac:name="highlight" ac:schema-version="1"
+    ac:macro-id="a4b2311f-dc48-40b8-96dd-c8af4612ef48">
+    <ac:parameter ac:name="color">green</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>highlight</ac:rich-text-body>
+</ac:structured-macro>
+<p> Highlightimus maximus</p>
+
+<h2>tm</h2>
+<ac:structured-macro ac:name="tm" ac:schema-version="1"
+    ac:macro-id="e390c3fb-f4c3-4202-a3fc-869cae946a86">
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>Some rich content</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="732d2718-98f0-4812-8f7f-a81712debb20">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>
+    <br />
+</p>
+<p>This is an example for an inline </p>
+<ac:structured-macro ac:name="tm" ac:schema-version="1"
+    ac:macro-id="3ab3e68a-bec1-4b44-bc9e-8a57e3726bea">
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>tmmacro</ac:rich-text-body>
+</ac:structured-macro>
+<p>tm tm tm.</p>
+
+<h2>reg-tm</h2>
+<ac:structured-macro ac:name="reg-tm" ac:schema-version="1"
+    ac:macro-id="ac836a17-900d-4e47-a406-caa1c4c2503c">
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>
+        <p>Some rich content</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="762d0e5e-29bf-414d-908d-315aee2cd694">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<p>This is an example for an inline </p>
+<ac:structured-macro ac:name="reg-tm" ac:schema-version="1"
+    ac:macro-id="ef8bdc48-3dec-4e7e-af8b-0db23362c516">
+    <ac:parameter ac:name="atlassian-macro-output-type">INLINE</ac:parameter>
+    <ac:rich-text-body>registered trademark</ac:rich-text-body>
+</ac:structured-macro>
+]]></property>
+    <property name="content" class="Page" package="com.atlassian.confluence.pages"><id name="id">45809845</id></property>
+    <property name="bodyType">2</property>
+  </object>
+</hibernate-generic>

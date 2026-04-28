@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-generic datetime="2023-10-02 11:40:11">
+  <object class="ConfluenceUserImpl" package="com.atlassian.confluence.user">
+    <id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    <property name="name"><![CDATA[Teo]]></property>
+    <property name="lowerName"><![CDATA[Smecherus]]></property>
+    <property name="email"><![CDATA[teo@email.com]]></property>
+  </object>
+  <object class="Page" package="com.atlassian.confluence.spaces">
+    <id name="id">45809845</id>
+    <property name="hibernateVersion">5</property>
+    <property name="title">My Space Home</property>
+    <property name="lowerTitle">my space home</property>
+    <collection name="bodyContents" class="java.util.Collection"><element class="BodyContent" package="com.atlassian.confluence.core"><id name="id">156868656</id>
+    </element>
+    </collection>
+    <property name="version">1</property>
+    <property name="creator" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="creationDate">2012-08-21 15:37:47.000</property>
+    <property name="lastModifier" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="lastModificationDate">2016-10-11 14:47:37.000</property>
+    <property name="versionComment"><![CDATA[]]></property>
+    <property name="contentStatus"><![CDATA[current]]></property>
+    <collection name="labellings" class="java.util.Collection"></collection>
+    <property name="space" class="Space" package="com.atlassian.confluence.spaces"><id name="id">46268417</id>
+    </property>
+    <collection name="attachments" class="java.util.Collection(com.atlassian.confluence.core.ContentEntityObject.attachments)"></collection>
+  </object>
+  <object class="Space" package="com.atlassian.confluence.spaces">
+    <id name="id">46268417</id>
+    <property name="name"><![CDATA[My Space]]></property>
+    <property name="key"><![CDATA[MySpace]]></property>
+    <property name="lowerKey"><![CDATA[myspace]]></property>
+    <property name="homePage" class="Page" package="com.atlassian.confluence.pages"><id name="id">45809845</id></property>
+    <collection name="permissions" class="java.util.Collection"></collection>
+    <property name="creator" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="creationDate">2012-08-21 15:37:47.000</property>
+    <property name="lastModifier" class="ConfluenceUserImpl" package="com.atlassian.confluence.user"><id name="key"><![CDATA[01f7c1cc638e0d8c0163d05ca6f60124]]></id>
+    </property>
+    <property name="lastModificationDate">2016-10-11 14:47:37.000</property>
+    <property name="spaceType">global</property>
+    <property name="spaceStatus" enum-class="SpaceStatus" package="com.atlassian.confluence.spaces">CURRENT</property>
+  </object>
+  <object class="BodyContent" package="com.atlassian.confluence.core">
+    <id name="id">156868656</id>
+    <property name="body"><![CDATA[
+<h2>Align</h2>
+<ac:structured-macro ac:name="align" ac:schema-version="1"
+    ac:macro-id="9c27e005-b8e1-48e6-a810-6350b389e60e">
+    <ac:parameter ac:name="align">left</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>THis content is left</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="d7d22bbc-8421-4618-bab8-e0bb2c5e0860">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:name="align" ac:schema-version="1"
+    ac:macro-id="684f8d9e-958f-42e4-b5c1-8163dd40dfb2">
+    <ac:parameter ac:name="align">right</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>THis content is right</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="08178e6a-ba48-48ba-910b-832b77e6fa09">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:name="align" ac:schema-version="1"
+    ac:macro-id="8e2bd933-9e50-4ef1-9891-e00767f5782b">
+    <ac:parameter ac:name="align">center</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>THis content is center</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="0d6a6390-3cf9-4492-84d2-d41209139796">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<ac:structured-macro ac:name="align" ac:schema-version="1"
+    ac:macro-id="74fde94c-2cf1-4101-b6e7-e435f8a026d3">
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>THis content is justified</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="9459373f-bc77-4e28-aca9-d31a75a74474">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<h2>Div</h2>
+<ac:structured-macro ac:name="div" ac:schema-version="1"
+    ac:macro-id="01fdb01f-bbdf-4e13-afa4-7ba0e9c41be7">
+    <ac:parameter ac:name="style">color: grey</ac:parameter>
+    <ac:parameter ac:name="id">someId</ac:parameter>
+    <ac:parameter ac:name="dir">rtl</ac:parameter>
+    <ac:parameter ac:name="lang">ro</ac:parameter>
+    <ac:parameter ac:name="title">Some text shown on hover</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>THis is some nice content of the div</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="0cc7aeef-96b6-4141-9df4-5ccc17aa9615">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+<h2>p</h2>
+<ac:structured-macro ac:name="p" ac:schema-version="1"
+    ac:macro-id="d19e912d-6344-4108-99ab-cb83f9617ce0">
+    <ac:parameter ac:name="style">opacity: 0.5</ac:parameter>
+    <ac:parameter ac:name="id">someId</ac:parameter>
+    <ac:parameter ac:name="dir">rtl</ac:parameter>
+    <ac:parameter ac:name="lang">ro</ac:parameter>
+    <ac:parameter ac:name="title">U are hovering this</ac:parameter>
+    <ac:parameter ac:name="class">someClass</ac:parameter>
+    <ac:rich-text-body>
+        <p>Some other rich content</p>
+        <p>
+            <strong>Strong </strong>
+            <em>italic</em>
+        </p>
+        <ac:structured-macro ac:name="info" ac:schema-version="1"
+            ac:macro-id="58c024e0-48af-4409-ac48-cd48dd3afc6f">
+            <ac:parameter ac:name="title">Proof</ac:parameter>
+            <ac:rich-text-body>
+                <p>That this supports rich content</p>
+            </ac:rich-text-body>
+        </ac:structured-macro>
+        <p>
+            <br />
+        </p>
+    </ac:rich-text-body>
+</ac:structured-macro>
+]]></property>
+    <property name="content" class="Page" package="com.atlassian.confluence.pages"><id name="id">45809845</id></property>
+    <property name="bodyType">2</property>
+  </object>
+</hibernate-generic>
