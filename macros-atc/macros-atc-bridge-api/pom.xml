@@ -23,7 +23,7 @@
   <parent>
     <groupId>com.xwiki.confluenceextra</groupId>
     <artifactId>macros-atc</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>macros-atc-bridge-api</artifactId>
   <packaging>jar</packaging>

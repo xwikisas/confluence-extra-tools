@@ -23,7 +23,7 @@
   <parent>
     <groupId>com.xwiki.confluenceextra</groupId>
     <artifactId>macros-tfcs</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>macros-tfcs-bridge-api</artifactId>
   <packaging>jar</packaging>

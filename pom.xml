@@ -29,7 +29,7 @@
   </parent>
   <groupId>com.xwiki.confluenceextra</groupId>
   <artifactId>confluence-extra-tools-parent</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
   <name>Confluence extra tools - Parent POM</name>
   <packaging>pom</packaging>
   <issueManagement>
@@ -40,7 +40,7 @@
     <connection>scm:git:git://github.com/xwikisas/confluence-extra-tools.git</connection>
     <developerConnection>scm:git:git@github.com:xwikisas/confluence-extra-tools.git</developerConnection>
     <url>https://github.com/xwikisas/confluence-extra-tools/tree/main</url>
-    <tag>confluence-extra-tools-parent-1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <confluence.version>9.93.0</confluence.version>
