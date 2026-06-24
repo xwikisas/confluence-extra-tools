@@ -23,7 +23,7 @@
   <parent>
     <groupId>com.xwiki.confluenceextra</groupId>
     <artifactId>confluence-extra-tools-parent</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
   <artifactId>macro-converter-tests</artifactId>
   <name>Confluence extra tools - Macros - Converter tests</name>
