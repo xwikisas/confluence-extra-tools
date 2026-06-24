@@ -22,11 +22,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.xwiki.confluenceextra</groupId>
-    <artifactId>macros-cfc</artifactId>
+    <artifactId>confluence-extra-tools-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>macro-converter-tests</artifactId>
-  <name>Confluence extra tools - Macro - converter tests</name>
+  <name>Confluence extra tools - Macros - Converter tests</name>
   <description>Tests for macro converters</description>
   <dependencies>
     <dependency>
